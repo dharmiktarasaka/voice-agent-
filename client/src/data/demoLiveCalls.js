@@ -1,0 +1,70 @@
+// Demo data for Live Active Calls monitoring
+
+export const initialLiveCalls = [
+  {
+    id: 'live-call-101',
+    contactName: 'Nikhil Mehta',
+    contactCompany: 'Mehta Trading Co.',
+    phoneNumber: '+91 98201 99881',
+    direction: 'outbound',
+    agentId: 'agent-1',
+    agentName: 'Rohan - Real Estate Qualifier',
+    language: 'Hindi',
+    languageCode: 'hi',
+    startedAt: Date.now() - 145000, // ~2m 25s ago
+    status: 'In Progress',
+    stage: 'Discussing Budget & Timeline',
+    sentiment: 'Positive',
+    latencyMs: 142,
+    transcriptFeed: [
+      { id: 'lf-1', speaker: 'agent', speakerName: 'Rohan (AI)', text: 'नमस्ते निखिल जी! स्काईलाइन रियल्टी से रोहन बात कर रहा हूँ।' },
+      { id: 'lf-2', speaker: 'customer', speakerName: 'Nikhil Mehta', text: 'हाँ रोहन, मुझे आपके नए टावर्स में 3BHK के बारे में जानना है।' },
+      { id: 'lf-3', speaker: 'agent', speakerName: 'Rohan (AI)', text: 'बहुत बढ़िया। हमारे 3BHK में प्राइवेट बालकनी और 2 कार पार्किंग शामिल हैं। आपका पसंदीदा बजट लगभग कितना रहेगा?' },
+      { id: 'lf-4', speaker: 'customer', speakerName: 'Nikhil Mehta', text: 'हम 1 से 1.2 करोड़ के आसपास देख रहे हैं, अगर पज़ेशन अगले साल मिल जाए तो।' },
+      { id: 'lf-5', speaker: 'agent', speakerName: 'Rohan (AI)', text: 'जी बिल्कुल, टॉवर B का पज़ेशन जून 2027 में है जो आपके बजट में बिल्कुल सही बैठता है।' },
+    ],
+  },
+  {
+    id: 'live-call-102',
+    contactName: 'Amanda Brooks',
+    contactCompany: 'Brooks & Associates',
+    phoneNumber: '+1 (555) 432-1098',
+    direction: 'inbound',
+    agentId: 'agent-2',
+    agentName: 'Priya - Clinic Appointment Coordinator',
+    language: 'English',
+    languageCode: 'en',
+    startedAt: Date.now() - 65000, // ~1m 05s ago
+    status: 'In Progress',
+    stage: 'Selecting Appointment Slot',
+    sentiment: 'Positive',
+    latencyMs: 110,
+    transcriptFeed: [
+      { id: 'lf-201', speaker: 'agent', speakerName: 'Priya (AI)', text: 'Good morning! Thank you for calling Apex Dental Clinic. My name is Priya.' },
+      { id: 'lf-202', speaker: 'customer', speakerName: 'Amanda Brooks', text: 'Hi Priya, I chipped a molar last night and I am hoping Dr. Mehta can examine it today or tomorrow morning.' },
+      { id: 'lf-203', speaker: 'agent', speakerName: 'Priya (AI)', text: 'I am so sorry to hear that, Amanda. Let us take care of that right away. Are you experiencing any sharp pain right now?' },
+      { id: 'lf-204', speaker: 'customer', speakerName: 'Amanda Brooks', text: 'It is a bit tender with cold water, but manageable.' },
+      { id: 'lf-205', speaker: 'agent', speakerName: 'Priya (AI)', text: 'Understood. We have an urgent evaluation slot at 3:15 PM today with Dr. Mehta. Would that suit you?' },
+    ],
+  },
+  {
+    id: 'live-call-103',
+    contactName: 'Hitesh Patel',
+    contactCompany: 'Patel Brothers Ahmedabad',
+    phoneNumber: '+91 97240 55112',
+    direction: 'inbound',
+    agentId: 'agent-3',
+    agentName: 'Meera - Gujarati Retail & Order Desk',
+    language: 'Gujarati',
+    languageCode: 'gu',
+    startedAt: Date.now() - 32000, // ~32s ago
+    status: 'In Progress',
+    stage: 'Greeting & Language Verification',
+    sentiment: 'Neutral',
+    latencyMs: 130,
+    transcriptFeed: [
+      { id: 'lf-301', speaker: 'agent', speakerName: 'Meera (AI)', text: 'જય શ્રી કૃષ્ણ! ડાયમંડ ટેક્સટાઈલ્સમાંથી હું મીરાં બોલું છું. હું આપને કઈ રીતે મદદ કરી શકું?' },
+      { id: 'lf-302', speaker: 'customer', speakerName: 'Hitesh Patel', text: 'જય શ્રી કૃષ્ણ. અમારે અમદાવાદ શોરૂમ માટે નવી બાંધણી સાડીઓનો સ્ટોક મંગાવવો છે.' },
+    ],
+  },
+];

@@ -1,0 +1,125 @@
+// Demo data for Phone Numbers management
+
+export const initialPhoneNumbers = [
+  {
+    id: 'pn-1',
+    phoneNumber: '+91 (22) 6984-2100',
+    friendlyName: 'Mumbai Sales Hotline (Primary)',
+    provider: 'Twilio Voice (Demo)',
+    numberType: 'Local Landline',
+    country: 'IN',
+    countryName: 'India',
+    capabilities: {
+      inbound: true,
+      outbound: true,
+      sms: true,
+    },
+    assignedAgentId: 'agent-1', // Rohan
+    assignedAgentName: 'Rohan - Real Estate Qualifier',
+    status: 'active',
+    lastActivity: '2026-10-19T11:42:00Z',
+    callsHandled: 4890,
+  },
+  {
+    id: 'pn-2',
+    phoneNumber: '+91 (79) 4901-8850',
+    friendlyName: 'Gujarat Regional Helpline',
+    provider: 'Telnyx SIP (Demo)',
+    numberType: 'Local Landline',
+    country: 'IN',
+    countryName: 'India',
+    capabilities: {
+      inbound: true,
+      outbound: true,
+      sms: false,
+    },
+    assignedAgentId: 'agent-3', // Meera
+    assignedAgentName: 'Meera - Gujarati Retail & Order Desk',
+    status: 'active',
+    lastActivity: '2026-10-19T11:35:00Z',
+    callsHandled: 2410,
+  },
+  {
+    id: 'pn-3',
+    phoneNumber: '+1 (800) 842-9912',
+    friendlyName: 'US Toll-Free Support Desk',
+    provider: 'Twilio Voice (Demo)',
+    numberType: 'Toll-Free',
+    country: 'US',
+    countryName: 'United States',
+    capabilities: {
+      inbound: true,
+      outbound: false,
+      sms: false,
+    },
+    assignedAgentId: 'agent-4', // Aarav
+    assignedAgentName: 'Aarav - Inbound SaaS Support Specialist',
+    status: 'active',
+    lastActivity: '2026-10-19T10:15:00Z',
+    callsHandled: 2890,
+  },
+  {
+    id: 'pn-4',
+    phoneNumber: '+91 98200 44810',
+    friendlyName: 'Dental Clinic Direct Line',
+    provider: 'Vonage Telecom (Demo)',
+    numberType: 'Mobile Virtual',
+    country: 'IN',
+    countryName: 'India',
+    capabilities: {
+      inbound: true,
+      outbound: true,
+      sms: true,
+    },
+    assignedAgentId: 'agent-2', // Priya
+    assignedAgentName: 'Priya - Clinic Appointment Coordinator',
+    status: 'active',
+    lastActivity: '2026-10-19T11:10:00Z',
+    callsHandled: 3450,
+  },
+  {
+    id: 'pn-5',
+    phoneNumber: '+1 (415) 890-3321',
+    friendlyName: 'San Francisco Outbound Pool #1',
+    provider: 'Telnyx SIP (Demo)',
+    numberType: 'Local VoIP',
+    country: 'US',
+    countryName: 'United States',
+    capabilities: {
+      inbound: false,
+      outbound: true,
+      sms: false,
+    },
+    assignedAgentId: 'agent-5', // Vikram
+    assignedAgentName: 'Vikram - Outbound B2B Lead Followup',
+    status: 'active',
+    lastActivity: '2026-10-18T19:20:00Z',
+    callsHandled: 1220,
+  },
+  {
+    id: 'pn-6',
+    phoneNumber: '+44 (20) 7946-0922',
+    friendlyName: 'London Inbound Gateway',
+    provider: 'Plivo Voice (Demo)',
+    numberType: 'Local VoIP',
+    country: 'GB',
+    countryName: 'United Kingdom',
+    capabilities: {
+      inbound: true,
+      outbound: true,
+      sms: false,
+    },
+    assignedAgentId: null,
+    assignedAgentName: 'Unassigned',
+    status: 'unassigned',
+    lastActivity: '2026-10-15T09:00:00Z',
+    callsHandled: 140,
+  },
+];
+
+export const telephonyProviders = [
+  { id: 'twilio', name: 'Twilio Voice', regions: ['US', 'IN', 'EU', 'AU'], latency: 'Low (<120ms)' },
+  { id: 'telnyx', name: 'Telnyx Global SIP', regions: ['US', 'EU', 'APAC'], latency: 'Ultra-low (<95ms)' },
+  { id: 'vonage', name: 'Vonage Business Telephony', regions: ['US', 'IN', 'GB'], latency: 'Standard (<140ms)' },
+  { id: 'plivo', name: 'Plivo Enterprise Voice', regions: ['US', 'APAC'], latency: 'Standard (<150ms)' },
+];

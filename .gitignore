@@ -1,0 +1,27 @@
+# Dependencies
+node_modules
+client/node_modules
+
+# Build artifacts
+dist
+client/dist
+dist-ssr
+client/dist-ssr
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env.local
+.env.*.local
+
+# IDE
+.vscode
+.idea
+.DS_Store
+
+# Vercel
+.vercel
+client/.vercel
+
